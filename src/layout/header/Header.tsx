@@ -1,32 +1,21 @@
+import { Logo } from "../../components/logo/Logo";
+import { Menu } from "../../components/menu/Menu";
+import styled from 'styled-components';
+
+const items = ["Home", "Skills", "Works", "Education", "Contact"];
 
 export const Header = () => {
     return (
-        <header>
-            <a href="">
-                <img src="" alt="" />
-            </a>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">Home </a>
-                        </li>
-                    <li>
-                        <a href="">Skills </a>
-                        </li>
-                    <li>
-                        <a href="">Works </a>
-                        </li>
-                    <li>
-                        <a href="">Testimony </a>
-                        </li>
-                    <li>
-                        <a href="">Contact </a>
-                        </li>
-                </ul>
-            </nav>
-        </header>   
+        <StyledHeader>
+            <Logo/>
+            <Menu menuItems={items}/>
+        </StyledHeader>   
     );
 };
+
+const StyledHeader = styled.header`
+display: flex;
+justify-content: space-between;
+`
 
 
