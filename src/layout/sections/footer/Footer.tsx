@@ -36,13 +36,17 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-background-color: #ffd8a5;
-min-height: 20px;
-
+width: 250px;
+height: 90px;
+margin: 0 auto;
+border: 2px solid transparent;
+border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
+border-image-slice: 1;
 `
 const SocialList = styled.ul`
 display: flex;
-gap: 30px;
+gap: 40px;
+justify-content: center;
 `
 const SocialItem = styled.li`
 
