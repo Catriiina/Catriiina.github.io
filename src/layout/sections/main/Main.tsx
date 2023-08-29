@@ -44,7 +44,7 @@ object-fit: scale-down;
 `
 
 const MainTitle = styled.h1`
-color: #111 ;
+color: #242424 ;
 font-size: 30px;
 font-style: normal;
 font-weight: 400;

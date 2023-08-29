@@ -42,6 +42,7 @@ const SocialList = styled.ul`
 display: flex;
 gap: 40px;
 justify-content: center;
+
 `
 const SocialItem = styled.li`
 
@@ -49,9 +50,10 @@ const SocialItem = styled.li`
 const SocialLink = styled.a`
 
 `
-const Copyright = styled.small`
+const Text = styled.span`
 
 `
-const Text = styled.span`
+
+const Copyright = styled.small`
 
 `
