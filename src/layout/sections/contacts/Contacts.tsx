@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Button } from '../../../components/Button';
+import ground from '../../../assets/images/notebook.jpg';
 
 export const Contacts = () => {
     return (
@@ -19,7 +20,11 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
 min-height: 50vh;
-
+background-image: url(${ground});
+background-size: cover;
+background-position: center;
+opacity: 0.8; /* Прозрачность блока */
+padding: 50px; /* Пример отступов для содержимого */
 `
 const StyledForm  = styled.form`
 max-width: 300px;
@@ -39,4 +44,8 @@ const Text = styled.p`
 width: 100%;
 max-width: 100%;
 margin: 10 auto;
+color: #64efff;
+max-width: 100%;
+padding: 10px; 
+background-color: rgba(0, 0, 0, 0.5); /* Установите желаемый цвет фона (здесь используется полупрозрачный черный цвет) */
 `

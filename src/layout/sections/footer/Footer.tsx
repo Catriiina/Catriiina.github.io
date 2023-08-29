@@ -29,19 +29,14 @@ export const Footer = () => {
 
             </SocialList>
 
-            <Copyright>Made by Katarin G — Copyright 2023</Copyright>
+            <Copyright> Designed and developed by Katarin G 2023</Copyright>
           </FlexWrapper> 
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-width: 250px;
-height: 90px;
-margin: 0 auto;
-border: 2px solid transparent;
-border-image: linear-gradient(to left top,#adf2f7 10%,  transparent 30%, transparent 70%, #adf2f7 90%);
-border-image-slice: 1;
+
 `
 const SocialList = styled.ul`
 display: flex;
