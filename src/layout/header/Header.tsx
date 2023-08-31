@@ -19,8 +19,12 @@ margin: 0 auto;
 padding: 0 ;
 position: fixed; 
 top: 0; 
-width: 100%;
-background-color: #242424;
+background-color: #ededf9;
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 1170px;
 `
 
 

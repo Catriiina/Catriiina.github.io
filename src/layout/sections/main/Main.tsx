@@ -27,7 +27,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-    width: 1280px;
+    width: 1200px;
     height: 600px;
     margin: 0 auto;
     border: 5px solid transparent;

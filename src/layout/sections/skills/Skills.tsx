@@ -9,6 +9,7 @@ export const Skills = () => {
         <StyledSkills>
             <Container>
             <SectionTitle> My Skills </SectionTitle>
+            
             <FlexWrapper wrap={"wrap"} justify="space-between">
                 <Skill iconId={"html"}
                  title={"HTML5"} />
@@ -30,6 +31,7 @@ export const Skills = () => {
                 <Skill iconId={"styledComponents"}
                  title={"STYLED-COMPONENTS"} />
             </FlexWrapper>
+            
             </Container>
         </StyledSkills>
     );
@@ -37,4 +39,9 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
 max-height: 65vh;
+min-width: 1170px;
+max-width: 1170px;
+justify-content: center;
+
 `
+

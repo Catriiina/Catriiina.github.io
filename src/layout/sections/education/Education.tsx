@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { SectionTitle } from '../../../components/SectionTitle';
-import png from "../../../assets/images/bsuir.png";
+import png from "../../../assets/images/pngwing.com.png";
 import { Slider } from '../../../components/slider/Slider';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
+import ground from '../../../assets/images/foni.jpeg';
 
 export const Education = () => {
     return (
@@ -20,9 +21,20 @@ export const Education = () => {
 };
 
 const StyledEducation = styled.section`
+background-image: url(${ground});
+background-size: cover;
+background-position: center;
+opacity: 0.85;
+padding: 50px; 
+color: #fff;
+display: flex;
+justify-content: center; 
+ align-items: center; 
+ 
+
 
 `
 const Png = styled.img`
-height: 200px;
-weight: 150px;
+height: 100%;
+weight: 100px;
 `

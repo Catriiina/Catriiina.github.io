@@ -26,9 +26,14 @@ min-height: 50vh;
 background-image: url(${ground});
 background-size: cover;
 background-position: center;
-opacity: 0.8;
+opacity: 0.85;
 padding: 50px; 
-color: #fff
+color: #fff;
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 1170px;
 `
 const StyledForm  = styled.form`
 max-width: 300px;

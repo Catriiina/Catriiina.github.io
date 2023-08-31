@@ -36,7 +36,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-
+background-color: #484848;
 `
 const SocialList = styled.ul`
 display: flex;
