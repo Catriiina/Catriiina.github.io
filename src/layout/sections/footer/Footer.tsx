@@ -1,59 +1,63 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { Icon } from '../../../components/icon/Icon';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 
 export const Footer = () => {
-    return (
-        <StyledFooter>
-            <Text>You can find me here:</Text>
-           <FlexWrapper direction={"column"} align={"center"}>
-            <SocialList>
+  return (
+    <StyledFooter>
+      <Text>You can find me here:</Text>
+      <FlexWrapper direction={'column'} align={'center'}>
+        <SocialList>
+          <SocialItem>
+            <SocialLink>
+              <Icon
+                iconId={'gmail'}
+                height={'35px'}
+                width={'35px'}
+                viewBox={'0 0 35px 35px'}
+              />
+            </SocialLink>
+          </SocialItem>
 
-                <SocialItem>
-                  <SocialLink>
-                    <Icon iconId={"gmail"} height={"35px"} width={"35px"} viewBox={"0 0 35px 35px"}/>
-                  </SocialLink>
-                </SocialItem>
+          <SocialItem>
+            <SocialLink>
+              <Icon
+                iconId={'linkedin'}
+                height={'35px'}
+                width={'35px'}
+                viewBox={'0 0 35px 35px'}
+              />
+            </SocialLink>
+          </SocialItem>
 
-                <SocialItem>
-                  <SocialLink>
-                    <Icon iconId={"linkedin"} height={"35px"} width={"35px"} viewBox={"0 0 35px 35px"}/>
-                  </SocialLink>
-                </SocialItem>
+          <SocialItem>
+            <SocialLink>
+              <Icon
+                iconId={'github'}
+                height={'35px'}
+                width={'35px'}
+                viewBox={'0 0 35px 35px'}
+              />
+            </SocialLink>
+          </SocialItem>
+        </SocialList>
 
-                <SocialItem>
-                  <SocialLink>
-                    <Icon iconId={"github"} height={"35px"} width={"35px"} viewBox={"0 0 35px 35px"}/>
-                  </SocialLink>
-                </SocialItem>
-
-            </SocialList>
-
-            <Copyright> Designed and developed by Katarin G 2023</Copyright>
-          </FlexWrapper> 
-        </StyledFooter>
-    );
+        <Copyright> Designed and developed by Katarin G 2023</Copyright>
+      </FlexWrapper>
+    </StyledFooter>
+  );
 };
 
 const StyledFooter = styled.footer`
-background-color: #484848;
-`
+  background-color: #484848;
+`;
 const SocialList = styled.ul`
-display: flex;
-gap: 40px;
-justify-content: center;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+`;
+const SocialItem = styled.li``;
+const SocialLink = styled.a``;
+const Text = styled.span``;
 
-`
-const SocialItem = styled.li`
-
-`
-const SocialLink = styled.a`
-
-`
-const Text = styled.span`
-
-`
-
-const Copyright = styled.small`
-
-`
+const Copyright = styled.small``;

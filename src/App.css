@@ -1,5 +1,3 @@
-
-
 :root {
   font-family: Roboto;
   line-height: 1.5;
@@ -33,8 +31,7 @@ a:hover {
 body {
   margin: 0;
   min-width: 320px;
-  height: 100%; 
-  
+  height: 100%;
 }
 
 h1 {
@@ -62,9 +59,44 @@ button:focus-visible {
 }
 
 ul {
-list-style: none;
+  list-style: none;
 }
 
 section {
   padding: 100px 0;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  position: relative;
+  padding-bottom: 2px; /* Регулируйте этот параметр для толщины полоски */
+  text-decoration: none;
+  color: #000; /* Цвет текста */
+  margin-right: 20px; /* Расстояние между ссылками */
+  transition: padding-bottom 0.3s ease; /* Плавное изменение при наведении */
+}
+
+.menu a.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Толщина полоски */
+  background-color: #64efff; /* Цвет полоски при наведении */
+  transform: scaleX(0); /* Полоска невидима по умолчанию */
+  transform-origin: right;
+  transition: transform 0.3s ease; /* Плавное расширение при наведении */
+}
+
+.menu a:hover {
+  padding-bottom: 0;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }

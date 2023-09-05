@@ -1,47 +1,38 @@
 import styled from 'styled-components';
-import {SectionTitle} from '../../../components/SectionTitle'
+import { SectionTitle } from '../../../components/SectionTitle';
 import { FlexWrapper } from '../../../components/FlexWrapper';
-import {Skill} from './skill/Skill'
+import { Skill } from './skill/Skill';
 import { Container } from '../../../components/Container';
 
 export const Skills = () => {
-    return (
-        <StyledSkills>
-            <Container>
-            <SectionTitle> My Skills </SectionTitle>
-            
-            <FlexWrapper wrap={"wrap"} justify="space-between">
-                <Skill iconId={"html"}
-                 title={"HTML5"} />
+  return (
+    <StyledSkills>
+      <Container>
+        <SectionTitle> My Skills </SectionTitle>
 
-                <Skill iconId={"css"} 
-                 title={"CSS3"}/>
+        <FlexWrapper wrap={'wrap'} justify="space-between">
+          <Skill iconId={'html'} title={'HTML5'} />
 
-                <Skill iconId={"reactSvg"} 
-                 title={"REACT"} />
-            </FlexWrapper>
+          <Skill iconId={'css'} title={'CSS3'} />
 
-            <FlexWrapper wrap={"wrap"} justify="space-between">
-                <Skill iconId={"typescriptSvg"} 
-                 title={"TYPESCRIPT"} />
+          <Skill iconId={'reactSvg'} title={'REACT'} />
+        </FlexWrapper>
 
-                <Skill iconId={"figma"}
-                 title={"FIGMA"} />
+        <FlexWrapper wrap={'wrap'} justify="space-between">
+          <Skill iconId={'typescriptSvg'} title={'TYPESCRIPT'} />
 
-                <Skill iconId={"styledComponents"}
-                 title={"STYLED-COMPONENTS"} />
-            </FlexWrapper>
-            
-            </Container>
-        </StyledSkills>
-    );
+          <Skill iconId={'figma'} title={'FIGMA'} />
+
+          <Skill iconId={'styledComponents'} title={'STYLED-COMPONENTS'} />
+        </FlexWrapper>
+      </Container>
+    </StyledSkills>
+  );
 };
 
 const StyledSkills = styled.section`
-max-height: 65vh;
-min-width: 1170px;
-max-width: 1170px;
-justify-content: center;
-
-`
-
+  max-height: 65vh;
+  min-width: 1170px;
+  max-width: 1170px;
+  justify-content: center;
+`;
