@@ -12,10 +12,9 @@ export const Header = () => {
     <StyledHeader>
       <Container>
         <Menu menuItems={items} />
-      
       </Container>
-      
     </StyledHeader>
+    
       <MobileMenu menuItems={items} />
     </>
   );

@@ -13,8 +13,8 @@ export const Main = () => {
             <MainTitle>Frontend Developer</MainTitle>
             <Information>
               <FlexWrapper align={'left'} justify={'space-around'}>
-                Hello, I'm a Front-End Developer. I'm from Belarus, but now i
-                live in Belgrade, Serbia.
+                Hello, I'm a Front-End Developer. I'm from Belarus, but now i'm
+                living in Belgrade, Serbia.
               </FlexWrapper>
             </Information>
           </div>
