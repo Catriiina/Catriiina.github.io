@@ -31,8 +31,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  max-height: 65vh;
-  min-width: 1170px;
-  max-width: 1170px;
-  justify-content: center;
+ 
 `;

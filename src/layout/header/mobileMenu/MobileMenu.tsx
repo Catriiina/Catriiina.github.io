@@ -5,7 +5,7 @@ export const MobileMenu = (props: { menuItems: Array<string> }) => {
   return (
     <StyledMobileMenu>
       <BurgerButton isOpen={true}>
-        <span></span>
+        <span>вапарол</span>
       </BurgerButton>
       <MobileMenuPopup isOpen={true}>
         <ul>
@@ -71,8 +71,8 @@ const StyledMobileMenu = styled.nav`
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
   position: fixed;
-  top: -100px;
-  right: -100px;
+  top: 100px;
+  right: 100px;
   width: 200px;
   height: 200px;
   z-index: 9999999;

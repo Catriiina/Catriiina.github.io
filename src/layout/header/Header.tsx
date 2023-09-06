@@ -8,12 +8,16 @@ const items = ['Home', 'Skills', 'Works', 'Education', 'Contact'];
 
 export const Header = () => {
   return (
+    <>
     <StyledHeader>
       <Container>
         <Menu menuItems={items} />
-        <MobileMenu menuItems={items} />
+      
       </Container>
+      
     </StyledHeader>
+      <MobileMenu menuItems={items} />
+    </>
   );
 };
 
@@ -27,7 +31,8 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1170px;
+  max-width: 1277px;
+  width: 100%;
 
   @media ${theme.media.tablet} {
     display: none;
