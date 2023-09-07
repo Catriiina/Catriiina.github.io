@@ -26,7 +26,6 @@ const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   background-color: #ededf9;
-
   display: flex;
   justify-content: center;
   align-items: center;

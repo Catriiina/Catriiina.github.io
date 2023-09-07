@@ -121,7 +121,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `;
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
@@ -129,8 +129,6 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   z-index: 99999;
   justify-content: center;
   align-items: center;
-  width:100%;
-  height:100%;
 
   ${(props) =>
     props.isOpen &&

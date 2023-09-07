@@ -6,25 +6,25 @@ import { theme } from '../../../styles/Theme';
 
 export const Main = () => {
   return (
-    <FlexWrapperMobile>
            <StyledMain>
       <Container>
         <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
+        <FlexWrapperMobile>
           <div>
             <Name>I'm Katrina Guz</Name>
             <MainTitle>Frontend Developer</MainTitle>
             <Information>
-              <FlexWrapper align={'left'} justify={'space-around'}>
+              <FlexWrapper align={'left'} justify={'space-around'} wrap={'wrap'}>
                 Hello, I'm a Front-End Developer. I'm from Belarus, but now i'm
                 living in Belgrade, Serbia.
               </FlexWrapper>
             </Information>
           </div>
           <Photo src={photo} alt="My Photo" />
+          </FlexWrapperMobile>
         </FlexWrapper>
       </Container>
     </StyledMain>
-    </FlexWrapperMobile>
   );
 };
 
@@ -43,6 +43,18 @@ const StyledMain = styled.div`
   border-image-slice: 1;
   margin-top: 60px;
   display: flex;
+
+  @media ${theme.media.mobile} {
+    width: 100%; 
+    height: auto; 
+    justify-content: center; 
+  }
+
+  @media ${theme.media.tablet} {
+    width: 100%; 
+    height: auto; 
+  }
+
 `;
 
 const Photo = styled.img`
@@ -83,7 +95,9 @@ const Information = styled.p`
 `;
 
 const FlexWrapperMobile = styled(FlexWrapper)`
-  @media ${theme.media.mobile} {
+  @media ${theme.media.tablet} {
     flex-direction: column;
+    align-items: center; 
+    text-align: center;
   }
 `;

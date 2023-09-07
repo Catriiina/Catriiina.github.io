@@ -85,11 +85,11 @@ section {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px; /* Толщина полоски */
-  background-color: #64efff; /* Цвет полоски при наведении */
-  transform: scaleX(0); /* Полоска невидима по умолчанию */
+  height: 4px; 
+  background-color: #64efff; 
+  transform: scaleX(0); 
   transform-origin: right;
-  transition: transform 0.3s ease; /* Плавное расширение при наведении */
+  transition: transform 0.3s ease; 
 }
 
 .menu a:hover {
@@ -99,4 +99,10 @@ section {
 .menu a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.App{
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
