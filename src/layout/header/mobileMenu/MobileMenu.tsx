@@ -121,7 +121,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 `;
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
@@ -129,6 +129,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   z-index: 99999;
   justify-content: center;
   align-items: center;
+  width:100%;
+  height:100%;
 
   ${(props) =>
     props.isOpen &&
@@ -136,7 +138,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(31, 31, 32, 0.9);
+      background-color: rgba(78, 186, 194, 0.999);
     `}
 
   ul {

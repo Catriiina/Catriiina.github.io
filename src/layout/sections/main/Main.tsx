@@ -2,12 +2,14 @@ import photo from '../../../assets/images/MyPhoto.jpg';
 import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
+import { theme } from '../../../styles/Theme';
 
 export const Main = () => {
   return (
-    <StyledMain>
+    <FlexWrapperMobile>
+           <StyledMain>
       <Container>
-        <FlexWrapper align={'center'} justify={'space-between'}>
+        <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
           <div>
             <Name>I'm Katrina Guz</Name>
             <MainTitle>Frontend Developer</MainTitle>
@@ -22,6 +24,7 @@ export const Main = () => {
         </FlexWrapper>
       </Container>
     </StyledMain>
+    </FlexWrapperMobile>
   );
 };
 
@@ -46,6 +49,12 @@ const Photo = styled.img`
   width: 350px;
   height: 500px;
   object-fit: scale-down;
+
+  @media ${theme.media.mobile} {
+    width: 310px;
+    height: 450px;
+  }
+
 `;
 
 const MainTitle = styled.h1`
@@ -57,17 +66,24 @@ const MainTitle = styled.h1`
 `;
 
 const Name = styled.h2`
-  color: #white;
+  color: ${theme.colors.accent}; 
   font-family: Poppins;
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
   line-height: 70px;
 `;
-const Information = styled.text`
-  color: #white;
+
+const Information = styled.p` 
+  color: #242424;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+`;
+
+const FlexWrapperMobile = styled(FlexWrapper)`
+  @media ${theme.media.mobile} {
+    flex-direction: column;
+  }
 `;
