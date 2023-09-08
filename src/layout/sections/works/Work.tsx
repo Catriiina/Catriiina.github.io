@@ -13,7 +13,6 @@ export const Work = (props: WorkPropsType) => {
       <Title>{props.title} </Title>
       <Text>{props.text} </Text>
       <Link href={'#'}> Demo </Link>
-      <Link href={'#'}> Code </Link>
     </StyledWork>
   );
 };

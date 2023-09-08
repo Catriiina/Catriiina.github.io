@@ -6,6 +6,7 @@ import { Work } from '../works/Work';
 import socialImg from '../../../assets/images/yandexIntern.jpeg';
 import timerImg from '../../../assets/images/portfolio.png';
 import { Container } from '../../../components/Container';
+import { theme } from '../../../styles/Theme';
 
 const worksItems = ['ALL', 'Experience', 'My projects'];
 
@@ -15,7 +16,7 @@ export const Works = () => {
       <Container>
         <SectionTitle> My Works</SectionTitle>
         <Menu menuItems={worksItems} />
-        <FlexWrapper justify={'space-around'}>
+        <FlexWrapper wrap={'wrap'} justify={'space-around'}>
           <Work
             title={'internship at Yandex'}
             text={'Theory and practical experience in web development'}
@@ -37,5 +38,13 @@ const StyledWorks = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1170px;
+  max-width: 1170px;
+  
+
+  @media ${theme.media.tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+  }
 `;

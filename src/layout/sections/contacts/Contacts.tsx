@@ -38,20 +38,23 @@ const StyledContacts = styled.section`
   align-items: center;
   min-width: 1170px;
 `;
+
 const StyledForm = styled.form`
 max-width: 300px;
-width: 100%
+width: 100%;
 display: flex;
 flex-direction: column;
 gap: 10px;
 margin: 0 auto;
 `;
+
 const Field = styled.input`
   padding: 15px;
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 100%;
 `;
+
 const Text = styled.p`
   width: 100%;
   max-width: 100%;

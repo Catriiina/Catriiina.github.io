@@ -30,7 +30,7 @@ const SkillTitle = styled.h3`
 const IconWrapper = styled.div`
   position: relative;
 
-  &:: before {
+  &::before {
     content: '';
     display: inline-block;
     width: 80px;

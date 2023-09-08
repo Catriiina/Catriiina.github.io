@@ -10,7 +10,7 @@ export const Skills = () => {
       <Container>
         <SectionTitle> My Skills </SectionTitle>
 
-        <FlexWrapper wrap={'wrap'} justify="space-between">
+        <FlexWrapper justify="space-evenly">
           <Skill iconId={'html'} title={'HTML5'} />
 
           <Skill iconId={'css'} title={'CSS3'} />
@@ -18,7 +18,7 @@ export const Skills = () => {
           <Skill iconId={'reactSvg'} title={'REACT'} />
         </FlexWrapper>
 
-        <FlexWrapper wrap={'wrap'} justify="space-between">
+        <FlexWrapper justify="space-evenly">
           <Skill iconId={'typescriptSvg'} title={'TYPESCRIPT'} />
 
           <Skill iconId={'figma'} title={'FIGMA'} />
