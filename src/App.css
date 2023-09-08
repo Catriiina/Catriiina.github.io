@@ -34,11 +34,6 @@ body {
   height: 100%;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -72,11 +67,11 @@ section {
 
 .menu a {
   position: relative;
-  padding-bottom: 2px; /* Регулируйте этот параметр для толщины полоски */
+  padding-bottom: 2px; 
   text-decoration: none;
-  color: #000; /* Цвет текста */
-  margin-right: 20px; /* Расстояние между ссылками */
-  transition: padding-bottom 0.3s ease; /* Плавное изменение при наведении */
+  color: #000; 
+  margin-right: 20px; 
+  transition: padding-bottom 0.3s ease; 
 }
 
 .menu a.active::after {

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import { theme } from '../../../styles/Theme';
+import { font } from '../../../styles/Common';
 
 export const Main = () => {
   return (
@@ -70,28 +71,18 @@ const Photo = styled.img`
 `;
 
 const MainTitle = styled.h1`
-  color: #242424;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  ${font({weight: 400, color: '#242424', Fmax: 30, Fmin: 20 })};
 `;
 
 const Name = styled.h2`
-  color: ${theme.colors.accent}; 
-  font-family: Poppins;
-  font-size: 60px;
+  ${font({family: 'Poppins', weight: 500, lineHeight: 70, Fmax: 50, Fmin: 36 })};
   font-style: normal;
-  font-weight: 500;
-  line-height: 70px;
+  color: ${theme.colors.accent};
 `;
 
 const Information = styled.p` 
-  color: #242424;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
+  ${font({weight: 400, color: '#242424',lineHeight: 30, Fmax: 18, Fmin: 13 })};
+ 
 `;
 
 const FlexWrapperMobile = styled(FlexWrapper)`
