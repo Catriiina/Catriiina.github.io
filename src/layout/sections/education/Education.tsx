@@ -24,7 +24,7 @@ const StyledEducation = styled.section`
   background-image: url(${ground});
   background-size: cover;
   background-position: center;
-  opacity: 0.85;
+  opacity: 0.8;
   padding: 50px;
   color: #fff;
   display: flex;
@@ -33,5 +33,5 @@ const StyledEducation = styled.section`
 `;
 const Png = styled.img`
   height: 100%;
-  weight: 100px;
+  width: 100px;
 `;

@@ -36,7 +36,7 @@ const StyledContacts = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 1170px;
+  max-width: 1170px;
 `;
 
 const StyledForm = styled.form`
