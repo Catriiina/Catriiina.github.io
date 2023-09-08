@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Icon } from '../../../components/icon/Icon';
 import { FlexWrapper } from '../../../components/FlexWrapper';
+import { theme } from '../../../styles/Theme';
 
 export const Footer = () => {
   return (
@@ -49,7 +50,7 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: #484848;
+  background-color: ${theme.colors.secondaryBg};
 `;
 const SocialList = styled.ul`
   display: flex;

@@ -25,7 +25,7 @@ const StyledHeader = styled.header`
   padding: 0;
   position: fixed;
   top: 0;
-  background-color: #ededf9;
+  background-color: ${theme.colors.secondaryBg};
   display: flex;
   justify-content: center;
   align-items: center;

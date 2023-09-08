@@ -136,7 +136,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(78, 186, 194, 0.999);
+      background-color: #c0eaec;
     `}
 
   ul {

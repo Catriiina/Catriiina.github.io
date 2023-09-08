@@ -36,10 +36,10 @@ const StyledMain = styled.div`
   border: 5px solid transparent;
   border-image: linear-gradient(
     to left top,
-    #adf2f7 10%,
+    #08ecf4 10%,
     transparent 30%,
     transparent 70%,
-    #adf2f7 90%
+    #08ecf4 90%
   );
   border-image-slice: 1;
   margin-top: 60px;
