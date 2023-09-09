@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { S } from "./Works_Styles";
 
 type WorkPropsType = {
   title: string;
@@ -6,30 +6,13 @@ type WorkPropsType = {
   src: string;
 };
 
-export const Work = (props: WorkPropsType) => {
+export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
   return (
-    <StyledWork>
-      <Image src={props.src} alt="" />
-      <Title>{props.title} </Title>
-      <Text>{props.text} </Text>
-      <Link href={'#'}> Demo </Link>
-    </StyledWork>
+    <S.Work>
+      <S.Image src={props.src} alt="" />
+      <S.Title>{props.title} </S.Title>
+      <S.Text>{props.text} </S.Text>
+      <S.Link href={'#'}> Demo </S.Link>
+    </S.Work>
   );
 };
-
-const StyledWork = styled.div`
-  max-width: 540px;
-  width: 100%;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-`;
-
-const Title = styled.h3``;
-
-const Link = styled.a``;
-
-const Text = styled.p``;

@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { theme } from '../../../styles/Theme';
 import { useState } from 'react';
 
-export const MobileMenu = (props: { menuItems: Array<string> }) => {
+export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <StyledMobileMenu>

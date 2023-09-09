@@ -6,7 +6,7 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import ground from '../../../assets/images/foni.jpeg';
 
-export const Education = () => {
+export const Education: React.FC = () => {
   return (
     <StyledEducation>
       <Container>

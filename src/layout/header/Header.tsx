@@ -1,38 +1,21 @@
 import { Menu } from '../../components/menu/Menu';
-import styled from 'styled-components';
 import { Container } from '../../components/Container';
-import { theme } from '../../styles/Theme';
 import { MobileMenu } from './mobileMenu/MobileMenu';
+import {S} from '../header/Header_Styles'
 
 const items = ['Home', 'Skills', 'Works', 'Education', 'Contact'];
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
     <>
-    <StyledHeader>
+    <S.Header>
       <Container>
         <Menu menuItems={items} />
       </Container>
-    </StyledHeader>
+    </S.Header>
     
       <MobileMenu menuItems={items} />
     </>
   );
 };
 
-const StyledHeader = styled.header`
-  margin: 0 auto;
-  padding: 0;
-  position: fixed;
-  top: 0;
-  background-color: ${theme.colors.secondaryBg};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1277px;
-  width: 100%;
-
-  @media ${theme.media.tablet} {
-    display: none;
-  }
-`;

@@ -96,7 +96,7 @@ section {
   transform: scaleX(1);
   transform-origin: left;
 }
-/*
+
 @media screen and (max-width: 768px) {
   .App {
     width: 100vw;
@@ -112,10 +112,11 @@ section {
     overflow-y: auto;
   }
 }
-*/
 
+/*
 .App {
   width: 100vw;
   overflow-x: hidden;
   overflow-y: auto;
 }
+*/

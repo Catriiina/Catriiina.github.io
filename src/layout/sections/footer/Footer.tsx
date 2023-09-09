@@ -3,46 +3,38 @@ import { Icon } from '../../../components/icon/Icon';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { theme } from '../../../styles/Theme';
 
-export const Footer = () => {
+const SocialItemsData = [
+  {
+    iconId: 'gmail',
+  },
+  {
+    iconId: 'linkedin',
+  },
+  {
+    iconId: 'github',
+  }
+]
+
+export const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <Text>You can find me here:</Text>
       <FlexWrapper direction={'column'} align={'center'}>
         <SocialList>
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                iconId={'gmail'}
-                height={'35px'}
-                width={'35px'}
-                viewBox={'0 0 35px 35px'}
-              />
-            </SocialLink>
-          </SocialItem>
-
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                iconId={'linkedin'}
-                height={'35px'}
-                width={'35px'}
-                viewBox={'0 0 35px 35px'}
-              />
-            </SocialLink>
-          </SocialItem>
-
-          <SocialItem>
-            <SocialLink>
-              <Icon
-                iconId={'github'}
-                height={'35px'}
-                width={'35px'}
-                viewBox={'0 0 35px 35px'}
-              />
-            </SocialLink>
-          </SocialItem>
+          {SocialItemsData.map((s, index) =>{
+              return (<SocialItem>
+              <SocialLink>
+                <Icon
+                  iconId={s.iconId}
+                  key={index}
+                  height={'35px'}
+                  width={'35px'}
+                  viewBox={'0 0 35px 35px'}
+                />
+              </SocialLink>
+            </SocialItem>)
+          })}
         </SocialList>
-
         <Copyright> Designed and developed by Katarin G 2023</Copyright>
       </FlexWrapper>
     </StyledFooter>
