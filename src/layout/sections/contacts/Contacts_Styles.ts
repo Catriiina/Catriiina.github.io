@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import ground from '../../../assets/images/notebook.jpg';
+import { theme } from '../../../styles/Theme';
 
 const Contacts = styled.section`
   min-height: 50vh;
@@ -13,7 +14,7 @@ const Contacts = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
+  width: 100%;
 `;
 
 const Form = styled.form`
@@ -22,7 +23,13 @@ width: 100%;
 display: flex;
 flex-direction: column;
 gap: 10px;
-margin: 0 auto;
+
+@media ${theme.media.tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
 `;
 
 const Field = styled.input`
@@ -34,13 +41,20 @@ const Field = styled.input`
 
 const Text = styled.p`
   width: 100%;
-  max-width: 100%;
   margin: 10 auto;
   color: #64efff;
   max-width: 100%;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);
+
+  @media ${theme.media.tablet} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
 `;
+
 
 export const S = {
     Contacts,

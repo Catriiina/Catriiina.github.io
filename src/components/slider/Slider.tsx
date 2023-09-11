@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Slider = () => {
+export const Slider: React.FC = () => {
   return (
     <StyledSlider>
       <Slide>

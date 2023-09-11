@@ -6,14 +6,15 @@ const Works = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
-  
+  width: 100%;
+  height: 50vh;
 
   @media ${theme.media.tablet} {
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 100%;
+    height: 100vh;
   }
 `;
 

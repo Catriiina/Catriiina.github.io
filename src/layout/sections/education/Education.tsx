@@ -30,6 +30,8 @@ const StyledEducation = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  min-width: 100%;
 `;
 const Png = styled.img`
   height: 100%;

@@ -13,7 +13,7 @@
 }
 
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -112,11 +112,3 @@ section {
     overflow-y: auto;
   }
 }
-
-/*
-.App {
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-*/
