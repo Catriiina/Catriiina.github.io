@@ -1,10 +1,9 @@
 export const theme = {
   colors: {
-    primaryBg: '#F8F8FF',
-    secondaryBg: '#ddfeff',
-    textColorF: '#FFFFFF',
-    textColorS: '#000000',
-    accent: '#05f7ff',
+    bgColor: '#131313',//mostly black
+    textColor: '#f0f8ff',//aliceblue
+    accentColor: '#05f7ff',//neon blue
+    mobColor: 'rgb(149,214,232)',//blue
   },
 
   media: {

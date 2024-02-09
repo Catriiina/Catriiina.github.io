@@ -39,7 +39,7 @@ const StyledMobileMenu = styled.nav`
 
   a {
     font-weight: 500;
-    color: #000;
+    color: ${theme.colors.bgColor};
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -51,14 +51,14 @@ const StyledMobileMenu = styled.nav`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: ${theme.colors.accent};
+    background-color: ${theme.colors.accentColor};
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s;
   }
 
   a:hover {
-    color: ${theme.colors.accent};
+    color: ${theme.colors.accentColor};
   }
 
   a:hover::after {
@@ -91,7 +91,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     display: block;
     width: 36px;
     height: 2px;
-    background-color: ${(props) => (props.isOpen ? 'transparent' : theme.colors.accent)}; 
+    background-color: ${(props) => (props.isOpen ? 'transparent' : theme.colors.accentColor)}; 
     position: absolute;
     left: 0px;
     bottom: 20px;
@@ -101,7 +101,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 36px;
       height: 2px;
-      background-color: ${theme.colors.accent}; 
+      background-color: ${theme.colors.accentColor}; 
       position: absolute;
       transform: ${(props) => (props.isOpen ? 'rotate(-45deg) translateY(0)' : 'translateY(-10px)')};
       transition: transform 0.3s, background-color 0.3s; 
@@ -112,7 +112,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 36px;
       height: 2px;
-      background-color: ${theme.colors.accent};
+      background-color: ${theme.colors.accentColor};
       position: absolute;
       transform: ${(props) => (props.isOpen ? 'rotate(45deg) translateY(0)' : 'translateY(10px)')};
       transition: transform 0.3s, background-color 0.3s; 
@@ -136,7 +136,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #c0eaec;
+      background-color: ${theme.colors.mobColor};
     `}
 
   ul {

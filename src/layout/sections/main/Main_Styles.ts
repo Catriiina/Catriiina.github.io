@@ -33,9 +33,9 @@ const Main = styled.div`
 `;
 
 const Photo = styled.img`
-  width: 350px;
-  height: 500px;
-  object-fit: scale-down;
+  width: 400px;
+  height: 600px;
+  margin-left: 80px;
 
   @media ${theme.media.mobile} {
     width: 310px;
@@ -45,7 +45,7 @@ const Photo = styled.img`
 `;
 
 const MainTitle = styled.h1`
-  color: #242424;
+  color: ${theme.colors.textColor};
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -53,7 +53,7 @@ const MainTitle = styled.h1`
 `;
 
 const Name = styled.h2`
-  color: ${theme.colors.accent}; 
+  color: ${theme.colors.accentColor}; 
   font-family: Poppins;
   font-size: 60px;
   font-style: normal;
@@ -65,8 +65,8 @@ const Name = styled.h2`
 `;
 
 const Information = styled.p` 
-  color: #242424;
-  font-size: 18px;
+  color: ${theme.colors.textColor};
+  font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 30px;

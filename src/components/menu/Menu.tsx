@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {theme} from "../../styles/Theme.ts";
 
 export const Menu = (props: { menuItems: Array<string> }) => {
   return (
@@ -29,7 +30,7 @@ const StyledMenu = styled.nav`
 
   a {
     font-weight: 500;
-    color: #000;
+    color: ${theme.colors.textColor};
     text-decoration: none;
     transition: color 0.3s;
   }
@@ -41,14 +42,14 @@ const StyledMenu = styled.nav`
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #64efff;
+    background-color: ${theme.colors.accentColor};
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.3s;
   }
 
   a:hover {
-    color: #64efff;
+    color: ${theme.colors.accentColor};
   }
 
   a:hover::after {

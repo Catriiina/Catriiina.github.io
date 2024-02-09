@@ -7,7 +7,8 @@ const Works = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
+  color: ${theme.colors.textColor};
 
   @media ${theme.media.tablet} {
     display: flex;
@@ -35,11 +36,16 @@ const Image = styled.img`
   }
 `;
 
-const Title = styled.h3``;
+const Title = styled.h3`
+`;
 
-const Link = styled.a``;
+const Link = styled.a`
+    
+`;
 
-const Text = styled.p``;
+const Text = styled.p`
+  color: ${theme.colors.textColor};
+`;
 
 export const S = {
     Works,

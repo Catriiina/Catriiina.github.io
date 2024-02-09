@@ -14,8 +14,9 @@ export const Main: React.FC = () => {
             <S.MainTitle>Frontend Developer</S.MainTitle>
             <S.Information>
               <FlexWrapper align={'left'} justify={'space-around'} wrap={'wrap'}>
-                Hello, I'm a Front-End Developer. I'm from Belarus, but now i'm
-                living in Belgrade, Serbia.
+                Hello, i'm a graduate of the Faculty of Information Technologies at BSUIR. Currently, I reside in Belgrade, Serbia, where I continue to develop my skills in the field of IT.
+                Thanks to my education at BSUIR and living in different cultural environments, I have evolved both professionally and personally.
+                My journey is closely tied to frontend development, and I envision myself as a young and energetic professional, eager for continuous professional growth. I'm passionate about the opportunity to create interfaces that are not only functional but also pleasing for the user.
               </FlexWrapper>
             </S.Information>
           </div>

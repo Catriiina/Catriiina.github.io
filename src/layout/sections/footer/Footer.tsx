@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
 };
 
 const StyledFooter = styled.footer`
-  background-color: ${theme.colors.secondaryBg};
+  background-color: ${theme.colors.bgColor};
 `;
 const SocialList = styled.ul`
   display: flex;

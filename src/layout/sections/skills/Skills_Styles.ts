@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import {theme} from "../../../styles/Theme.ts";
 
 const Skills = styled.section`
  
@@ -11,6 +11,7 @@ const Skill = styled.div`
 const SkillTitle = styled.h3`
   text-align: center;
   font-weight: 150;
+  color: ${theme.colors.textColor};
 `;
 const IconWrapper = styled.div`
   position: relative;
@@ -36,3 +37,4 @@ export const S = {
     SkillTitle,
     IconWrapper
 }
+

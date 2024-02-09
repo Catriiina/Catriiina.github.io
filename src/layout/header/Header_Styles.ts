@@ -6,11 +6,11 @@ const Header = styled.header`
   padding: 0;
   position: fixed;
   top: 0;
-  background-color: ${theme.colors.secondaryBg};
+  background-color: ${theme.colors.bgColor};
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1277px;
+  max-width: 1500px;
   width: 100%;
 
   @media ${theme.media.tablet} {
