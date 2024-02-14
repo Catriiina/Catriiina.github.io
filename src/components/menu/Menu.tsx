@@ -1,41 +1,33 @@
 import styled from 'styled-components';
-import {theme} from "../../styles/Theme.ts";
+import { theme } from "../../styles/Theme.ts";
 
-export const Menu = (props: { menuItems: Array<string> }) => {
-  return (
-    <StyledMenu>
-      <ul>
-        {props.menuItems.map((item: string, index: number) => {
-          return (
-            <li key={index}>
-              <a href="">{item}</a>
-            </li>
-          );
-        })}
-      </ul>
-    </StyledMenu>
-  );
+type MenuPropsType = {
+    menuItems: Array<{ status: 'All' | 'My projects' | 'Experience', title: string }>;
+    changeFilterStatus: (value: 'All' | 'My projects' | 'Experience') => void;
 };
 
-const StyledMenu = styled.nav`
-  ul {
-    display: flex;
-    gap: 30px;
-    text-aligh: center;
-  }
+export const Menu = (props: MenuPropsType) => {
+    return (
+        <StyledMenu>
+            <ul>
+                {props.menuItems.map((item, index) => (
+                    <li key={index}>
+                        <Link as='button' onClick={() => { props.changeFilterStatus(item.status) }}>{item.title}</Link>
+                    </li>
+                ))}
+            </ul>
+        </StyledMenu>
+    );
+};
 
-  li {
-    position: relative;
-  }
+const Link = styled.button`
+  font-weight: 500;
+  color: ${theme.colors.textColor};
+  text-decoration: none;
+  transition: color 0.3s;
+  position: relative;
 
-  a {
-    font-weight: 500;
-    color: ${theme.colors.textColor};
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  a.active::after {
+  &:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -48,12 +40,24 @@ const StyledMenu = styled.nav`
     transition: transform 0.3s;
   }
 
-  a:hover {
+  &:hover {
     color: ${theme.colors.accentColor};
+
+    &:after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+`;
+
+const StyledMenu = styled.nav`
+  ul {
+    display: flex;
+    gap: 90px;
+    text-align: center;
   }
 
-  a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+  li {
+    position: relative;
   }
 `;

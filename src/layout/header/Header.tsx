@@ -1,7 +1,7 @@
-import { Menu } from '../../components/menu/Menu';
+import { Menu } from '../../components/menu/HeaderMenu.tsx';
 import { Container } from '../../components/Container';
 import { MobileMenu } from './mobileMenu/MobileMenu';
-import {S} from '../header/Header_Styles'
+import {S} from './Header_Styles.ts'
 
 const items = ['Home', 'Skills', 'Works', 'Education', 'Contact'];
 

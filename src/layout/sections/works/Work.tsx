@@ -12,7 +12,7 @@ export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
       <S.Image src={props.src} alt="" />
       <S.Title>{props.title} </S.Title>
       <S.Text>{props.text} </S.Text>
-      <S.Link href={'#'}> Demo </S.Link>
+      <S.Link href={'#'}> More.. </S.Link>
     </S.Work>
   );
 };

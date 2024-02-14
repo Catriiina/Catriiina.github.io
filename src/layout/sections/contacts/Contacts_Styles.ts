@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ground from '../../../assets/images/notebook.jpg';
+import ground from '../../../assets/images/notebook.webp';
 import { theme } from '../../../styles/Theme';
 
 const Contacts = styled.section`

@@ -53,14 +53,18 @@ const MainTitle = styled.h1`
 `;
 
 const Name = styled.h2`
-  color: ${theme.colors.accentColor}; 
+  background-clip: text;
+  -webkit-background-clip: text; /* Для поддержки браузеров, использующих WebKit (например, Safari и Chrome) */
+  color: transparent;
   font-family: Poppins;
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
   line-height: 70px;
-  @media (max-width:1024px) {
-   font-size:40px
+  background-image: linear-gradient(to right, #05f7ff, #ffffff); 
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
   }
 `;
 

@@ -9,6 +9,7 @@ const Works = styled.section`
   width: 100%;
   height: 80vh;
   color: ${theme.colors.textColor};
+  margin-bottom: 20px; 
 
   @media ${theme.media.tablet} {
     display: flex;
@@ -16,12 +17,14 @@ const Works = styled.section`
     align-items: center;
     max-height: 100%;
     height: 100vh;
+    margin-bottom: 60px; 
   }
 `;
 
 const Work = styled.div`
   max-width: 540px;
   width: 100%;
+  margin-bottom: 20px;
 `;
 
 const Image = styled.img`

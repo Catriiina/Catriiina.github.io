@@ -1,4 +1,4 @@
-import photo from '../../../assets/images/MyPhoto.jpg';
+import photo from '../../../assets/images/MyPhoto.webp';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import { S } from './Main_Styles';
