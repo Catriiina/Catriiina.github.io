@@ -13,9 +13,16 @@
     "format": "prettier --write \"**/*.{js,ts,tsx,jsx,css, html}\""
   },
   "dependencies": {
+    "@tsparticles/all": "^3.2.1",
+    "@tsparticles/basic": "^3.2.1",
+    "@tsparticles/engine": "^3.2.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "styled-components": "^6.0.7"
+    "react-tilt": "^1.0.2",
+    "styled-components": "^6.0.7",
+    "tsparticles": "^3.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

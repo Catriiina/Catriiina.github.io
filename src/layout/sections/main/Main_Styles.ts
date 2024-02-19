@@ -8,13 +8,11 @@ const Main = styled.div`
   height: 600px;
   margin: 0 auto;
   border: 5px solid transparent;
-  border-image: linear-gradient(
-    to left top,
-    #08ecf4 10%,
-    transparent 30%,
-    transparent 70%,
-    #08ecf4 90%
-  );
+  border-image: linear-gradient(to left top,
+  #08ecf4 10%,
+  transparent 30%,
+  transparent 70%,
+  #08ecf4 90%);
   border-image-slice: 1;
   margin-top: 60px;
   display: flex;
@@ -56,7 +54,7 @@ const Name = styled.h2`
   background-clip: text;
   -webkit-background-clip: text; /* Для поддержки браузеров, использующих WebKit (например, Safari и Chrome) */
   color: transparent;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 500;
