@@ -16,6 +16,7 @@ const Main = styled.div`
   border-image-slice: 1;
   margin-top: 60px;
   display: flex;
+  position: relative;
 
   @media ${theme.media.mobile} {
     width: 100%; 
@@ -34,6 +35,7 @@ const Photo = styled.img`
   width: 400px;
   height: 600px;
   margin-left: 80px;
+  position: relative;
 
   @media ${theme.media.mobile} {
     width: 310px;

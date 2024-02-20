@@ -12,7 +12,7 @@ const Header = styled.header`
   align-items: center;
   max-width: 1500px;
   width: 100%;
- 
+  z-index: 1000;
 
   
   @media ${theme.media.tablet} {

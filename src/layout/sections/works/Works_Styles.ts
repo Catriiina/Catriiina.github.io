@@ -9,7 +9,8 @@ const Works = styled.section`
   width: 100%;
   height: 80vh;
   color: ${theme.colors.textColor};
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  position: relative;
 
   @media ${theme.media.tablet} {
     display: flex;

@@ -1,15 +1,11 @@
 import styled from 'styled-components';
-import ground from '../../../assets/images/notebook.webp';
 import { theme } from '../../../styles/Theme';
 
 const Contacts = styled.section`
   max-height: 50vh;
-  background-image: url(${ground});
-  background-size: cover;
-  background-position: center;
-  padding: 50px;
+  padding: 15px;
   color: ${theme.colors.bgColor};
-
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +18,10 @@ width: 100%;
 display: flex;
 flex-direction: column;
 gap: 10px;
-
+margin: 40px auto 0;
+align-items: center;
+text-align: center;
+  
 @media ${theme.media.tablet} {
     display: flex;
     justify-content: center;
