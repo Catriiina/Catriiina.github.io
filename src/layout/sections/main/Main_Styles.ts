@@ -47,7 +47,7 @@ const MainTitle = styled.h1`
 
 const Name = styled.h2`
   background-clip: text;
-  -webkit-background-clip: text; /* Для поддержки браузеров, использующих WebKit (например, Safari и Chrome) */
+  -webkit-background-clip: text; /* Для поддержки браузеров, использующих WebKit ( Safari и Chrome) */
   color: transparent;
   font-family: Poppins, sans-serif;
   font-size: 60px;
@@ -67,6 +67,8 @@ const Information = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  padding: 30px;
+  align-items: center;
 `;
 
 const FlexWrapperMobile = styled(FlexWrapper)`

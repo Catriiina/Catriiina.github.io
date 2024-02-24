@@ -8,6 +8,14 @@ import portfolioImg from '../../../assets/images/portfolio.webp';
 import { Container } from '../../../components/Container';
 import React, { useState } from "react";
 
+type WorkDataItem = {
+  title: string;
+  text: string;
+  src: string;
+  type: 'Experience' | 'My projects';
+  link: string;
+};
+
 const worksItems: Array<{ status: 'All' | 'My projects' | 'Experience', title: string }> = [
   {
     title: 'All',
@@ -23,20 +31,24 @@ const worksItems: Array<{ status: 'All' | 'My projects' | 'Experience', title: s
   }
 ];
 
-const workData = [
+
+const workData: WorkDataItem[] = [
   {
     title: 'internship at Yandex',
     text: 'Theory and practical experience in web development',
     src: socialImg,
-    type: 'Experience'
+    type: 'Experience',
+    link: 'https://yandex.ru/yaintern/schools/frontend'
   },
   {
     title: 'Portfolio',
     text: 'TypeScript, ReactJs, css etc',
     src: portfolioImg,
-    type: 'My projects'
+    type: 'My projects',
+    link: 'https://github.com/Catriiina/Catriiina.github.io'
   }
 ];
+
 
 export const Works: React.FC = () => {
   const [currentFilterStatus, setCurrentFilterStatus] = useState<'All' | 'My projects' | 'Experience'>('All');
@@ -66,8 +78,10 @@ export const Works: React.FC = () => {
                     key={index}
                     text={w.text}
                     src={w.src}
+                    link={w.link}
                 />
             ))}
+
           </FlexWrapper>
         </Container>
       </S.Works>

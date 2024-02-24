@@ -6,13 +6,14 @@ type WorkPropsType = {
   src: string;
 };
 
-export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
-  return (
-    <S.Work id={'works'}>
-      <S.Image src={props.src} alt="" />
-      <S.Title>{props.title} </S.Title>
-      <S.Text>{props.text} </S.Text>
-      <S.Link href={'#'}> More.. </S.Link>
-    </S.Work>
-  );
+export const Work: React.FC<WorkPropsType & { link: string }> = (props) => {
+    return (
+        <S.Work id={'works'}>
+            <S.Image src={props.src} alt="" />
+            <S.Title>{props.title} </S.Title>
+            <S.Text>{props.text} </S.Text>
+            <S.Link href={props.link} target="_blank" rel="noopener noreferrer"> More.. </S.Link>
+        </S.Work>
+    );
 };
+

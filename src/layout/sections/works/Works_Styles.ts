@@ -7,7 +7,7 @@ const Works = styled.section`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   color: ${theme.colors.textColor};
   margin-bottom: 20px;
   position: relative;

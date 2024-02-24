@@ -5,7 +5,7 @@ const Skills = styled.section`
   position: relative;
 `;
 const Skill = styled.div`
-  width: 380px;
+  width: 200px;
   padding: 62px 20px;
 `;
 const SkillTitle = styled.h3`

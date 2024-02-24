@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from '../../../styles/Theme';
 
 const Contacts = styled.section`
-  max-height: 50vh;
+  height: 100%;
   padding: 15px;
   color: ${theme.colors.bgColor};
   position: relative;
