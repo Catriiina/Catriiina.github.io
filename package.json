@@ -13,6 +13,7 @@
     "format": "prettier --write \"**/*.{js,ts,tsx,jsx,css, html}\""
   },
   "dependencies": {
+    "@emailjs/browser": "^4.1.0",
     "@tsparticles/all": "^3.2.1",
     "@tsparticles/basic": "^3.2.1",
     "@tsparticles/engine": "^3.2.1",

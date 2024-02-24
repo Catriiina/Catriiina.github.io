@@ -39,11 +39,11 @@ const skillData = [
 
 export const Skills = () => {
   return (
-    <S.Skills>
+    <S.Skills  id={'skills'}>
       <Container>
         <SectionTitle> My Skills </SectionTitle>
 
-        <FlexWrapper justify="space-evenly">
+        <FlexWrapper justify="space-evenly" wrap={'wrap'}>
           {skillData.map((s, index) => {
             return  <Skill iconId={s.iconId} key ={index} title={s.title} /> 
           })}

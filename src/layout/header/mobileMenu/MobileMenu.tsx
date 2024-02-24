@@ -2,27 +2,38 @@ import styled, { css } from 'styled-components';
 import { theme } from '../../../styles/Theme';
 import { useState } from 'react';
 
-export const MobileMenu: React.FC<{ menuItems: Array<string> }> = (props: { menuItems: Array<string> }) => {
-  const [isOpen, setIsOpen] = useState(false)
-  return (
-    <StyledMobileMenu>
-      <BurgerButton isOpen={isOpen} onClick={()=>setIsOpen(prev=>!prev)}>
-        <span></span>
-      </BurgerButton>
-      <MobileMenuPopup isOpen={isOpen}>
-        <ul>
-          {props.menuItems.map((item: string, index: number) => {
-            return (
-              <li key={index}>
-                <a href="">{item}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </MobileMenuPopup>
-    </StyledMobileMenu>
-  );
+
+export const MobileMenu: React.FC<{ menuItems: Array<{ title: string, href: string }> }> = (props: { menuItems: Array<{ title: string, href: string }> }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClick = (href: string) => {
+        setIsOpen(false); // Закрываем мобильное меню после клика
+        const section = document.getElementById(href);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    return (
+        <StyledMobileMenu>
+            <BurgerButton isOpen={isOpen} onClick={() => setIsOpen(prev => !prev)}>
+                <span></span>
+            </BurgerButton>
+            <MobileMenuPopup isOpen={isOpen}>
+                <ul>
+                    {props.menuItems.map((item) => {
+                        return (
+                            <li key={item.title}>
+                                <a href={item.href} onClick={() => handleClick(item.href)}>{item.title}</a>
+                            </li>
+                        );
+                    })}
+                </ul>
+            </MobileMenuPopup>
+        </StyledMobileMenu>
+    );
 };
+
 
 const StyledMobileMenu = styled.nav`
   display: none;

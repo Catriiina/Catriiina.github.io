@@ -2,13 +2,15 @@ import photo from '../../../assets/images/MyPhoto.webp';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
 import { S } from './Main_Styles';
+import styled from "styled-components";
 
 export const Main: React.FC = () => {
   return (
-           <S.Main>
+           <S.Main id={'home'}>
       <Container>
         <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
-        <S.FlexWrapperMobile>
+          <S.Wrapper>
+          <S.FlexWrapperMobile>
           <div>
             <S.Name>I'm Katrina Guz</S.Name>
             <S.MainTitle>Frontend Developer</S.MainTitle>
@@ -22,7 +24,9 @@ export const Main: React.FC = () => {
           </div>
           <S.Photo src={photo} alt="My Photo" />
           </S.FlexWrapperMobile>
+          </S.Wrapper>
         </FlexWrapper>
+
       </Container>
     </S.Main>
   );

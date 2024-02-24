@@ -7,13 +7,6 @@ const Main = styled.div`
   width: 1200px;
   height: 600px;
   margin: 0 auto;
-  border: 5px solid transparent;
-  border-image: linear-gradient(to left top,
-  #08ecf4 10%,
-  transparent 30%,
-  transparent 70%,
-  #08ecf4 90%);
-  border-image-slice: 1;
   margin-top: 60px;
   display: flex;
   position: relative;
@@ -84,11 +77,22 @@ const FlexWrapperMobile = styled(FlexWrapper)`
   }
 `;
 
+const Wrapper = styled.div`
+  border: 5px solid transparent;
+  border-image: linear-gradient(to left top,
+  #08ecf4 10%,
+  transparent 30%,
+  transparent 70%,
+  #08ecf4 90%);
+  border-image-slice: 1;
+`
+
 export const S = {
     Main,
     Photo,
     MainTitle,
     Name,
     Information,
-    FlexWrapperMobile
+    FlexWrapperMobile,
+    Wrapper
 }

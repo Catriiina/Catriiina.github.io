@@ -3,7 +3,24 @@ import { Container } from '../../components/Container';
 import { MobileMenu } from './mobileMenu/MobileMenu';
 import {S} from './Header_Styles.ts'
 
-const items = ['Home', 'Skills', 'Works', 'Education', 'Contact'];
+const items = [
+  {
+    title:'Home',
+    href:'#home'
+  },
+  {
+    title:'Skills',
+    href:'#skills'
+  },
+  {
+    title:'Works',
+    href:'#works'
+  },
+  {
+    title:'Contact',
+    href:'#contact'
+  },
+];
 
 export const Header: React.FC = () => {
   return (
@@ -13,7 +30,7 @@ export const Header: React.FC = () => {
         <Menu menuItems={items} />
       </Container>
     </S.Header>
-    
+
       <MobileMenu menuItems={items} />
     </>
   );

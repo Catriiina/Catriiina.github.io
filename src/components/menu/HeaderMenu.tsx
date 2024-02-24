@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import {theme} from "../../styles/Theme.ts";
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+export const Menu = (props: { menuItems: Array<{ title: string, href: string }> }) => {
     return (
         <StyledMenu>
             <ul>
-                {props.menuItems.map((item: string, index: number) => {
+                {props.menuItems.map((item) => {
                     return (
-                        <li key={index}>
-                            <a href="">{item}</a>
+                        <li key={item.title} >
+                            <a href={item.href}>{item.title}</a>
                         </li>
                     );
                 })}
